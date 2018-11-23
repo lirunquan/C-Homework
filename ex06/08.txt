@@ -1,0 +1,6 @@
+Enter words(q to quit):
+The 12 awesome oxen ambled
+quietly across 15 meters of lawn. q
+5 words beginning with vowels.
+4 words beginning with consonants.
+2 others.
