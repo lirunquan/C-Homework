@@ -3,7 +3,7 @@
 #include "account.h"
 #include <string>
 using namespace std;
-Account::Account(const string &m_name, const string &m_id, double m_money = 0.0){
+Account::Account(const string &m_name, const string &m_id, double m_money){
 	name = m_name;
 	id = m_id;
 	money = m_money;
@@ -13,7 +13,7 @@ void Account::saveMoney(double m_money){
 		cout << "Invalid number of money.";
 	}
 	else{
-		cout << "Saving money..." << endl;
+		cout << name << " Saving money..." << endl;
 		money += m_money;
 	}
 }
@@ -25,7 +25,7 @@ void Account::withdraw(double m_money){
 		cout << "You cannot withdraw so much money.";
 	}
 	else{
-		cout << "Whthdrawing money..." << endl;
+		cout << name << " Whthdrawing money..." << endl;
 		money -= m_money;
 	}
 }
