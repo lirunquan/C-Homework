@@ -6,8 +6,8 @@ private:
     double y;
 public:
     Move(double a=0, double b=0);
-    showmove() const;
+    void showmove() const;
     Move add(const Move & m) const;
-    reset(double a=0, double b=0);
+    void reset(double a=0, double b=0);
 };
 #endif
