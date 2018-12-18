@@ -26,8 +26,8 @@ namespace VECTOR
         //内联函数：
         double xval() const {return x;}
         double yval() const {return y;}
-        double magval() const {return mag;}
-        double angval() const {return ang;}
+        double magval() ;
+        double angval() ;
         void polar_mode();
         void rect_mode();
         //操作符重载：
@@ -41,3 +41,4 @@ namespace VECTOR
     };
 }
 #endif
+

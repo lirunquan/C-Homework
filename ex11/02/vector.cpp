@@ -76,6 +76,12 @@ namespace VECTOR {
             mode = RECT;
         }
     }
+    double Vector::magval(){
+        return sqrt(x*x + y*y);
+    }
+    double Vector::angval(){
+        return atan2(y, x);
+    }
     void Vector::polar_mode(){
         mode = POL;
     }
@@ -112,3 +118,4 @@ namespace VECTOR {
         return os;
     }
 }
+
